@@ -27,13 +27,7 @@ export default function Home() {
           cardType: "summary_large_image",
         }}
       /> */}
-      {[1, 2, 3, 4, 3, 2, 3, 4].map((row, index) => {
-        return (
-          <div key={index}>
-            <WelomePage />
-          </div>
-        );
-      })}
+      <WelomePage />
     </div>
   );
 }

@@ -29,10 +29,10 @@ body {
 /* ========================== Font family ====================== */
 @font-face {
   font-family: Preahvihear;
-  src: url("/Assets/Fonts/Preahvihear.ttf");
+  src: url("../public/Fonts/Preahvihear.ttf");
 }
 
 @font-face {
   font-family: Kantumruy;
-  src: url("/Assets/Fonts/Kantumruy-Regular.ttf");
+  src: url("../public/Fonts/Kantumruy-Regular.ttf");
 }

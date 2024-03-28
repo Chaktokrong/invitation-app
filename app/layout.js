@@ -3,6 +3,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 //Srcs
 import "./globals.css";
 import "../components/welcomepage.scss"
+import "./AutoImage/autoimage.scss"
 
 const inter = Inter({ subsets: ["latin"] });
 
