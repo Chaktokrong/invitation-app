@@ -1,0 +1,32 @@
+@import "../themes.scss";
+
+.welcome-page {
+     width: 100%;
+     justify-content: center;
+
+     .main-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+          .box-container {
+               width: $width-container;
+
+               @include laptop {
+                    width: $width-laptop;
+               }
+
+               @include tablet {
+                    width: $width-laptop;
+               }
+
+               @include mobile {
+                    width: $width-laptop;
+               }
+
+               @include mobile-small {
+                    width: $width-laptop;
+               }
+          }
+     }
+}
