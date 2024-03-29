@@ -28,6 +28,12 @@ body {
 
 /* ========================== Font family ====================== */
 @font-face {
+  font-family: KhmerOsMoul;
+  src: url("../public/Fonts/KhmerMuolRegular.ttf");
+}
+
+
+@font-face {
   font-family: Preahvihear;
   src: url("../public/Fonts/Preahvihear.ttf");
 }

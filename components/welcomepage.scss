@@ -30,7 +30,8 @@
 
                .invitation-title{
                     font-family: $font-title;
-                    font-size: $font-size-title;
+                    font-size: $font-size-subtitle;
+                    color: $primary-color;
                     text-align: center;
                }
                .invitation-img{
@@ -40,6 +41,8 @@
                .button-to-open{
                     font-family: $font-title;
                     font-size: $font-body-size;
+                    color: $primary-color;
+                    font-weight: 100 !important;
                     border: 1px solid $primary-color;
                     border-radius: 6px;
                     padding: 10px 30px;
