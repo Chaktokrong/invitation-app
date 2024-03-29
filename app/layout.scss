@@ -1,0 +1,27 @@
+@import "../themes.scss";
+
+.layout-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .box-container {
+    width: 40%;
+
+    @include laptop {
+      width: 40%;
+    }
+
+    @include tablet {
+      width: $width-laptop;
+    }
+
+    @include mobile {
+      width: $width-laptop;
+    }
+
+    @include mobile-small {
+      width: 90%;
+    }
+  }
+}

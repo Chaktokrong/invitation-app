@@ -7,28 +7,23 @@ import Link from "next/link";
 const WelomePage = () => {
   return (
     <div className="welcome-page">
-      <Box className="main-container">
-        <Box className="box-container">
-          <Text className="invitation-title">ពិធីរៀបអាពាហ៍ពិពាហ៍</Text>
-          <Stack direction="row" justifyContent="center">
-            <Image
-              src="../../Images/bride-and-groom.png"
-              alt="header-img"
-              className="invitation-img"
-            />
-          </Stack>
-          <Text className="invitation-title">សូមគោរពអញ្ជើញ</Text>
-          <Text className="invitation-title">ឯកឧត្តម និងលោកជំទាវ</Text>
+      <Text className="invitation-title">ពិធីរៀបអាពាហ៍ពិពាហ៍</Text>
+      <Stack direction="row" justifyContent="center">
+        <Image
+          src="../../Images/bride-and-groom.png"
+          alt="header-img"
+          className="invitation-img"
+        />
+      </Stack>
+      <Text className="invitation-title">សូមគោរពអញ្ជើញ</Text>
+      <Text className="invitation-title">ឯកឧត្តម និងលោកជំទាវ</Text>
 
-          <Stack direction="row" justifyContent="center">
-            <Link href="/AutoImage" passHref>
-              <Button className="button-to-open">សូមចុចដើម្បីបើកសំបុត្រ</Button>
-            </Link>
-          </Stack>
-
-        </Box>
-      </Box>
-    </div>  
+      <Stack direction="row" justifyContent="center">
+        <Link href="/AutoImage" passHref>
+          <Button className="button-to-open">សូមចុចដើម្បីបើកសំបុត្រ</Button>
+        </Link>
+      </Stack>
+    </div>
   );
 };
 

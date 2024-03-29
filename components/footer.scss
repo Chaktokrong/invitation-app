@@ -1,0 +1,52 @@
+@import "../themes.scss";
+
+.welcome-page {
+     width: 100%;
+     justify-content: center;
+
+     .main-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+          .box-container {
+               width: $width-container;
+
+               @include laptop {
+                    width: $width-laptop;
+               }
+
+               @include tablet {
+                    width: $width-laptop;
+               }
+
+               @include mobile {
+                    width: $width-laptop;
+               }
+
+               @include mobile-small {
+                    width: $width-laptop;
+               }
+
+               .invitation-title{
+                    font-family: $font-title;
+                    font-size: $font-size-subtitle;
+                    color: $primary-color;
+                    text-align: center;
+               }
+               .invitation-img{
+                    width: 300px;
+                    height: auto;
+               }
+               .button-to-open{
+                    font-family: $font-title;
+                    font-size: $font-size-body;
+                    color: $primary-color;
+                    font-weight: 100 !important;
+                    border: 1px solid $primary-color;
+                    border-radius: 6px;
+                    padding: 10px 30px;
+               }
+          }
+     }
+}

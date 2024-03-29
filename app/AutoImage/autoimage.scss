@@ -1,49 +1,30 @@
 @import "../../themes.scss";
 
 .auto-image {
-     width: 100%;
-     justify-content: center;
+  width: 100%;
 
-     .main-container {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-
-          .box-container {
-               width: $width-container;
-
-               @include laptop {
-                    width: $width-laptop;
-               }
-
-               @include tablet {
-                    width: $width-laptop;
-               }
-
-               @include mobile {
-                    width: $width-laptop;
-               }
-
-               @include mobile-small {
-                    width: $width-laptop;
-               }
-
-               .invitation-title{
-                    font-family: $font-title;
-                    font-size: $font-size-title;
-                    text-align: center;
-               }
-               .invitation-img{
-                    width: 300px;
-                    height: auto;
-               }
-               .button-to-open{
-                    font-family: $font-title;
-                    font-size: $font-body-size;
-                    border: 1px solid $primary-color;
-                    border-radius: 6px;
-                    padding: 10px 30px;
-               }
-          }
-     }
+  .invitation-title {
+    font-family: $font-title;
+    font-size: $font-size-subtitle;
+    text-align: center;
+    color: $primary-color;
+  }
+  .invitation-img {
+    width: 300px;
+    height: auto;
+  }
+  .wedding-family-title {
+    width: 50%;
+    font-family: $font-title;
+    font-size: $font-size-body;
+    text-align: center;
+    color: $primary-color;
+  }
+  .wedding-family-name {
+    width: 50%;
+    font-family: $font-title;
+    font-size: $font-size-subtitle;
+    text-align: center;
+    color: $primary-color;
+  }
 }
