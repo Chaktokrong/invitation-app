@@ -4,6 +4,7 @@ import { ChakraProvider, Box } from "@chakra-ui/react";
 import Footer from "@/components/Footer";
 //Scss
 import "./globals.css";
+import "./layout.scss";
 import "../components/welcomepage.scss";
 import "./AutoImage/autoimage.scss";
 

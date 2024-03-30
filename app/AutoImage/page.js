@@ -1,9 +1,9 @@
 import React from "react";
-import { Stack, Box, Text, Image } from "@chakra-ui/react";
+import { Stack, Text, Image } from "@chakra-ui/react";
 
 export default function AutoImage() {
   return (
-    <div className="auto-image">
+    <Stack className="auto-image" direction="column" spacing={6}>
       <Text className="invitation-title">ពិធីរៀបអាពាហ៍ពិពាហ៍</Text>
       <Stack direction="row" justifyContent="center">
         <Image
@@ -21,9 +21,9 @@ export default function AutoImage() {
         <Text className="wedding-family-name">លោក</Text>
         <Text className="wedding-family-name">លោកស្រី</Text>
       </Stack>
-      <Text className="wedding-family-title">
+      <Text className="wedding-date">
         ថ្ងៃ សុក្រ ទី ២៩ ខែមីនា ឆ្នាំ២០២៤
       </Text>
-    </div>
+    </Stack>
   );
 }
