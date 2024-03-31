@@ -1,0 +1,52 @@
+@import "../../themes.scss";
+
+.agenda-page {
+  width: 100%;
+  padding: 20px 0px;
+  // padding: 80px 0px;
+
+  .agenda-title {
+    font-family: $font-title;
+    font-size: $font-size-title;
+    text-align: center;
+    color: $primary-color;
+  }
+  .divider-bottom {
+    border-top: 2px solid $primary-color;
+    width: 50%;
+  }
+
+  .morning-agenda {
+    width: 90%;
+    border-right: 2px solid #f8ece5;
+    border-left: 2px solid #f8ece5;
+    border-bottom: 2px solid #f8ece5;
+
+    .morning-title {
+      font-family: $font-title;
+      font-size: $font-size-subtitle;
+      text-align: center !important;
+      color: $primary-color;
+      letter-spacing: normal;
+    }
+    .time-title {
+      font-family: $font-title;
+      font-size: $font-size-body;
+      text-align: center !important;
+      color: $primary-color;
+      letter-spacing: normal;
+    }
+    .agenda-des {
+      margin-top: -5px;
+      font-family: $font-title;
+      font-size: $font-size-body;
+      text-align: center !important;
+      color: $primary-color;
+      letter-spacing: normal;
+    }
+    .arrow-icon {
+      margin-top: -5px;
+      color: $primary-color;
+    }
+  }
+}

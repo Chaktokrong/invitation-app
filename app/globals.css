@@ -14,10 +14,13 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+  
 }
 
 body {
   color: rgb(var(--foreground-rgb));
+  background-image: linear-gradient(to left, #efdfd3, #f1e4d9, #f3e9df, #f5eee5, #f8f3ec, #f8f3ec, #f8f3ec, #f8f3ec, #f5eee5, #f3e9df, #f1e4d9, #efdfd3);
+
 }
 
 @layer utilities {
@@ -44,11 +47,12 @@ body {
 }
 
 .bg-img{
-  background-image: url("../public/Images/bride-and-groom.png");
-  background-repeat: no-repeat;
+  /* background-image: url("../public/Images/bride-and-groom.png"); */
+  /* background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 90vh;
+  height: 90vh; */
   /* background-position: 70% 22%; */
   background-size: 74%;
   padding: 10px;
+
 }

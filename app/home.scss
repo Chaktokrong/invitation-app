@@ -1,17 +1,26 @@
 @import "../themes.scss";
 
-.welcome-page {
+.home-page {
   width: 100%;
+  padding: 120px 0px;
 
   .invitation-title {
+    font-family: $font-title;
+    font-size: $font-size-title;
+    color: $primary-color;
+    text-align: center;
+    letter-spacing: normal !important;
+  }
+  .invitation-img {
+    width: 200px;
+    height: auto;
+  }
+  .invitation-des {
     font-family: $font-title;
     font-size: $font-size-subtitle;
     color: $primary-color;
     text-align: center;
-  }
-  .invitation-img {
-    width: 300px;
-    height: auto;
+    letter-spacing: normal !important;
   }
   .button-to-open {
     font-family: $font-title;
@@ -21,5 +30,6 @@
     border: 1px solid $primary-color;
     border-radius: 6px;
     padding: 10px 30px;
+    letter-spacing: normal !important;
   }
 }

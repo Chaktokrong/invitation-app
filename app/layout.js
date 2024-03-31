@@ -1,12 +1,12 @@
 import { Inter } from "next/font/google";
 import { ChakraProvider, Box } from "@chakra-ui/react";
-//Srcs
-import Footer from "@/components/Footer";
 //Scss
 import "./globals.css";
 import "./layout.scss";
-import "../components/welcomepage.scss";
-import "./AutoImage/autoimage.scss";
+import "./home.scss";
+import "../components/footer.scss";
+import "./Introduction/intoduction.scss";
+import "./Agenda/agenda.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,16 +16,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
       <body className={inter.className}>
         <ChakraProvider>
           <div className="layout-container">
-            <Box className="box-container">
-              {children}
-              <Footer />
-            </Box>
+            <Box className="box-container">{children}</Box>
           </div>
         </ChakraProvider>
       </body>

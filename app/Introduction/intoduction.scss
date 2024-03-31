@@ -1,16 +1,17 @@
 @import "../../themes.scss";
 
-.auto-image {
+.introduction-page {
   width: 100%;
+  padding: 100px 0px;
 
   .invitation-title {
     font-family: $font-title;
-    font-size: $font-size-subtitle;
+    font-size: $font-size-title;
     text-align: center;
     color: $primary-color;
   }
   .invitation-img {
-    width: 300px;
+    width: 200px;
     height: auto;
   }
   .wedding-family-title {
@@ -19,18 +20,31 @@
     font-size: $font-size-body;
     text-align: center !important;
     color: $primary-color;
+    letter-spacing: normal;
   }
   .wedding-family-name {
     width: 50%;
     font-family: $font-title;
-    font-size: $font-size-subtitle;
+    font-size: $font-size-title;
     text-align: center;
     color: $primary-color;
+    letter-spacing: normal;
   }
-  .wedding-date{
+  .wedding-date {
     font-family: $font-title;
     font-size: $font-size-body;
     text-align: center !important;
+    color: $primary-color;
+    letter-spacing: normal;
+  }
+  .btn-save-date {
+    padding: 6px 20px;
+    text-transform: uppercase;
+    border: 2px solid $primary-color;
+    border-radius: 6px !important;
+    font-family: $font-title;
+    font-weight: bold;
+    font-size: $font-size-body;
     color: $primary-color;
   }
 }
