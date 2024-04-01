@@ -7,6 +7,7 @@ import "./home.scss";
 import "../components/footer.scss";
 import "./Introduction/intoduction.scss";
 import "./Agenda/agenda.scss";
+import "./Wish/wish.scss"
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -1,0 +1,17 @@
+@import "../../themes.scss";
+
+.wish-page {
+  width: 100%;
+  padding: 100px 0px;
+
+  .wish-title {
+    font-family: $font-title;
+    font-size: $font-size-title;
+    text-align: center;
+    color: $primary-color;
+  }
+  .divider-bottom {
+    border-top: 2px solid $primary-color;
+    width: 50%;
+  }
+}
