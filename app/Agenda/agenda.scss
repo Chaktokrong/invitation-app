@@ -18,11 +18,15 @@
 
   .morning-agenda {
     width: 90%;
+    // border-top: 2px solid #f8ece5;
     border-right: 2px solid #f8ece5;
     border-left: 2px solid #f8ece5;
     border-bottom: 2px solid #f8ece5;
-
+    .divider-title{
+      border-top: 2px solid #f8ece5;
+    }
     .morning-title {
+      width: fit-content;
       font-family: $font-title;
       font-size: $font-size-subtitle;
       text-align: center !important;

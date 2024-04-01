@@ -32,6 +32,26 @@ export default function Introduction() {
         <Button className="btn-save-date">Click to save the date</Button>
       </Stack>
 
+      <Text className="invitation-title" sx={{ marginTop: '200px' }}>Wedding party</Text>
+      <Stack direction="row" justifyContent="center">
+        <Image
+          src="../../Images/bride-and-groom.png"
+          alt="header-img"
+          className="invitation-img"
+        />
+      </Stack>
+
+      <Stack direction="column" spacing={1}>
+        <Stack direction="row">
+          <Text className="wedding-family-title">Mr.</Text>
+          <Text className="wedding-family-title">Lok Lok</Text>
+        </Stack>
+        <Stack direction="row">
+          <Text className="wedding-family-name">Ms.</Text>
+          <Text className="wedding-family-name">Lok Srey</Text>
+        </Stack>
+      </Stack>
+
       <Footer />
     </Stack>
   );
