@@ -2,26 +2,43 @@
 
 .footer-page {
   // width: 100%;
+  .box-container {
+    // background-color: red;
+    width: 50%;
 
-  .btn-container {
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-    height: 50px;
-    background-color: $primary-color;
+    @include laptop {
+      width: 60%;
+    }
+    @include tablet {
+      width: 100%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+    @include mobile-small {
+      width: 100%;
+    }
 
-    .btn-menu {
+    .btn-container {
+      width: 100%;
+      bottom: 0;
+      position: fixed;
       height: 50px;
-      padding: 10px 0px;
-      justify-content: center;
-      align-items: center;
-      width: 25%;
-      border-radius: 0px !important;
-      background-color: $primary-color !important;
-      font-family: $font-title;
-      font-size: $font-size-body;
-      font-weight: 100 !important;
-      color: $secondary-color;
+      background-color: $primary-color;
+
+      .btn-menu {
+        height: 50px;
+        padding: 10px 0px;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        border-radius: 0px !important;
+        background-color: $primary-color !important;
+        font-family: $font-title;
+        font-size: $font-size-body;
+        font-weight: 100 !important;
+        color: $secondary-color;
+      }
     }
   }
 }

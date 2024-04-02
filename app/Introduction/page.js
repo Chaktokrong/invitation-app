@@ -1,7 +1,5 @@
 import React from "react";
 import { Stack, Text, Button, Image } from "@chakra-ui/react";
-//Srcs
-import Footer from "@/components/Footer";
 
 export default function Introduction() {
   return (
@@ -51,8 +49,6 @@ export default function Introduction() {
           <Text className="wedding-family-name">Lok Srey</Text>
         </Stack>
       </Stack>
-
-      <Footer />
     </Stack>
   );
 }

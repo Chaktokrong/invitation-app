@@ -1,5 +1,11 @@
-import { Stack, Text, Image, Button } from "@chakra-ui/react";
+import { Stack, Text, Image, Button, Box } from "@chakra-ui/react";
 import Link from "next/link";
+//Srcs
+import Introduction from "./Introduction/page";
+import Agenda from "./Agenda/page";
+import Map from "./Map/page";
+import Wish from "./Wish/page";
+import Garllery from "./Garllery/page";
 
 export default function Home() {
   return (
@@ -22,6 +28,26 @@ export default function Home() {
           </Link>
         </Stack>
       </Stack>
+
+      <Box>
+        <Introduction/>
+      </Box>
+
+      <Box>
+        <Agenda/>
+      </Box>
+
+      <Box>
+        <Map/>
+      </Box>
+
+      <Box>
+        <Garllery/>
+      </Box>
+
+      <Box>
+        <Wish/>
+      </Box>
     </div>
   );
 }

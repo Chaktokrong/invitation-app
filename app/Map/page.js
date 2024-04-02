@@ -1,17 +1,25 @@
 import React from "react";
-import { Stack, Divider } from "@chakra-ui/react";
+import { Stack, Divider, Text, Image } from "@chakra-ui/react";
 
 export default function Map() {
   return (
-    <Stack className="agenda-page" direction="column" spacing={6}>
+    <Stack className="map-page" direction="column" spacing={6}>
       <Stack direction="column">
         <Stack direction="row" justifyContent="center">
           <Divider className="divider-bottom" />
         </Stack>
-        <Text className="agenda-title">ពិធីរៀបអាពាហ៍ពិពាហ៍</Text>
+        <Text className="map-title">ផែនទី | Map</Text>
         <Stack direction="row" justifyContent="center">
           <Divider className="divider-bottom" />
         </Stack>
+      </Stack>
+
+      <Stack direction="row" justifyContent="center">
+        <Image
+          src="../../Images/bride-and-groom.png"
+          alt="header-img"
+          className="map-img"
+        />
       </Stack>
     </Stack>
   );

@@ -3,7 +3,6 @@ import { Stack, Text, Box, Divider } from "@chakra-ui/react";
 //Icons
 import { FaArrowDownLong } from "react-icons/fa6";
 //Srcs
-import Footer from "@/components/Footer";
 
 export default function Agenda() {
   const agendaMorning = [
@@ -110,6 +109,9 @@ export default function Agenda() {
               <Stack direction="column" key={index}>
                 <Text className="time-title">{row?.time}</Text>
                 <Text className="agenda-des">{row?.title}</Text>
+                {
+                  agendaMorning?.length 
+                }
                 <Stack direction="row" justifyContent="center">
                   <FaArrowDownLong className="arrow-icon" />
                 </Stack>
@@ -211,8 +213,6 @@ export default function Agenda() {
           })}
         </Stack>
       </Stack>
-
-      <Footer />
     </Stack>
   );
 }
