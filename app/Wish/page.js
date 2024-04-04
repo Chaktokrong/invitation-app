@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Divider, Text, Input } from "@chakra-ui/react";
+import { Stack, Divider, Text, Input, Button } from "@chakra-ui/react";
 
 export default function Wish() {
   return (
@@ -17,7 +17,12 @@ export default function Wish() {
       <Stack direction="row" justifyContent="center">
         <Stack direction="column" spacing={4} w="80%">
           <Input placeholder="name" />
-          <Input placeholder="comment" multiple rowGap={5}/>
+          <Input placeholder="comment" multiple rowGap={5} />
+          <Stack direction="row" justifyContent="center">
+            <Button className="btn-save">
+              Save
+            </Button>
+          </Stack>
         </Stack>
       </Stack>
     </Stack>

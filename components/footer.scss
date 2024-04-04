@@ -1,6 +1,7 @@
 @import "../themes.scss";
 
 .footer-page {
+
   // width: 100%;
   .box-container {
     // background-color: red;
@@ -9,12 +10,15 @@
     @include laptop {
       width: 60%;
     }
+
     @include tablet {
       width: 100%;
     }
+
     @include mobile {
       width: 100%;
     }
+
     @include mobile-small {
       width: 100%;
     }
@@ -26,18 +30,36 @@
       height: 50px;
       background-color: $primary-color;
 
-      .btn-menu {
+      // .btn-menu {
+      //   height: 50px;
+      //   // padding: 10px 0px;
+      //   justify-content: center;
+      //   align-items: center;
+      //   width: 25%;
+      //   border-radius: 0px !important;
+      //   background-color: $primary-color !important;
+      //   font-family: $font-title;
+      //   font-size: $font-size-body;
+      //   font-weight: 100 !important;
+      //   color: $secondary-color;
+
+      //   .link {
+      //     // height: 50px;
+      //     // width: 100%;
+      //     background-color: red;
+      //   }
+      // }
+
+      .link {
         height: 50px;
-        padding: 10px 0px;
-        justify-content: center;
-        align-items: center;
         width: 25%;
-        border-radius: 0px !important;
-        background-color: $primary-color !important;
+        padding: 14px 0px;
         font-family: $font-title;
         font-size: $font-size-body;
         font-weight: 100 !important;
         color: $secondary-color;
+        text-align: center;
+        // background-color: red;
       }
     }
   }

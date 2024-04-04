@@ -16,7 +16,7 @@ export default function Map() {
 
       <Stack direction="row" justifyContent="center">
         <Image
-          src="../../Images/bride-and-groom.png"
+          src="../../Images/map.jpg"
           alt="header-img"
           className="map-img"
         />

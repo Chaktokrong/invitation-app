@@ -1,5 +1,10 @@
 import React from "react";
-import { Stack, Text, Button, Image } from "@chakra-ui/react";
+import { Stack, Text, Button, Image, Box } from "@chakra-ui/react";
+//Srcs
+import Agenda from "../Agenda/page";
+import Map from "../Map/page";
+import Wish from "../Wish/page";
+import Garllery from "../Garllery/page";
 
 export default function Introduction() {
   return (
@@ -49,6 +54,22 @@ export default function Introduction() {
           <Text className="wedding-family-name">Lok Srey</Text>
         </Stack>
       </Stack>
+
+      <Box>
+        <Agenda />
+      </Box>
+
+      <Box>
+        <Map />
+      </Box>
+
+      <Box>
+        <Garllery />
+      </Box>
+
+      <Box>
+        <Wish />
+      </Box>
     </Stack>
   );
 }
