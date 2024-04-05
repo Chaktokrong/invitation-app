@@ -1,20 +1,36 @@
+"use client"
 import React from "react";
 import { Stack, Text, Button, Image, Box } from "@chakra-ui/react";
+import { motion } from "framer-motion"
 //Srcs
 import Agenda from "../Agenda/page";
 import Map from "../Map/page";
 import Wish from "../Wish/page";
 import Garllery from "../Garllery/page";
 
+const MotionImage = motion(Image)
+const MotionText = motion(Text)
+
 export default function Introduction() {
+
   return (
     <Stack className="introduction-page" direction="column" spacing={6}>
-      <Text className="invitation-title">ពិធីរៀបអាពាហ៍ពិពាហ៍</Text>
+      <MotionText
+        className="invitation-title"
+        initial={{ y: 40, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.8 }}
+      >
+        ពិធីរៀបអាពាហ៍ពិពាហ៍
+      </MotionText>
       <Stack direction="row" justifyContent="center">
-        <Image
+        <MotionImage
           src="../../Images/bride-and-groom.png"
           alt="header-img"
           className="invitation-img"
+          initial={{ y: 40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
         />
       </Stack>
 
@@ -37,10 +53,13 @@ export default function Introduction() {
 
       <Text className="invitation-title" sx={{ marginTop: '200px' }}>Wedding party</Text>
       <Stack direction="row" justifyContent="center">
-        <Image
+        <MotionImage
           src="../../Images/bride-and-groom.png"
           alt="header-img"
           className="invitation-img"
+          initial={{ y: 40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
         />
       </Stack>
 
