@@ -46,6 +46,11 @@ body {
   src: url("../public/Fonts/Kantumruy-Regular.ttf");
 }
 
+@font-face {
+  font-family: TimeRoman;
+  src: url("../public/Fonts/Times-Roman.otf");
+}
+
 .bg-img{
   /* background-image: url("../public/Images/bride-and-groom.png"); */
   /* background-repeat: no-repeat;

@@ -1,0 +1,21 @@
+@import "../../themes.scss";
+
+.garllery-page {
+  width: 100%;
+  // margin-top: 30px;
+
+  .garllery-title {
+    font-family: $font-title;
+    font-size: $font-size-title;
+    text-align: center;
+    color: $primary-color;
+  }
+  .divider-bottom {
+    border-top: 2px solid $primary-color;
+    width: 180px !important;
+  }
+  .map-img {
+    width: 400px;
+    height: auto;
+  }
+}

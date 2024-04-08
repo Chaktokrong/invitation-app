@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Divider, Text, Image } from "@chakra-ui/react";
+import { Stack, Divider, Text, Image, Button } from "@chakra-ui/react";
 
 export default function Map() {
   return (
@@ -8,7 +8,7 @@ export default function Map() {
         <Stack direction="row" justifyContent="center">
           <Divider className="divider-bottom" />
         </Stack>
-        <Text className="map-title">ផែនទី | Map</Text>
+        <Text className="map-title">ផែនទី | MAP</Text>
         <Stack direction="row" justifyContent="center">
           <Divider className="divider-bottom" />
         </Stack>
@@ -20,6 +20,10 @@ export default function Map() {
           alt="header-img"
           className="map-img"
         />
+      </Stack>
+
+      <Stack direction="row" justifyContent="center">
+        <Button className="btn-save-map">Click to view map</Button>
       </Stack>
     </Stack>
   );

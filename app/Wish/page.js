@@ -8,7 +8,7 @@ export default function Wish() {
         <Stack direction="row" justifyContent="center">
           <Divider className="divider-bottom" />
         </Stack>
-        <Text className="wish-title">សារជូនពរ | Wish Message</Text>
+        <Text className="wish-title">សារជូនពរ | WISH MESSAGE</Text>
         <Stack direction="row" justifyContent="center">
           <Divider className="divider-bottom" />
         </Stack>

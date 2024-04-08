@@ -4,6 +4,7 @@
   width: 100%;
   padding: 20px 0px;
   // padding: 80px 0px;
+  // background-color: red;
 
   .agenda-title {
     font-family: $font-title;
@@ -11,9 +12,18 @@
     text-align: center;
     color: $primary-color;
   }
+
+  .agenda-title-en {
+    font-family: $font-timeroman;
+    font-size: $font-size-title;
+    text-transform: uppercase;
+    text-align: center;
+    color: $primary-color;
+  }
+
   .divider-bottom {
     border-top: 2px solid $primary-color;
-    width: 50%;
+    width: 240px !important;
   }
 
   .morning-agenda {
@@ -22,9 +32,26 @@
     border-right: 2px solid #f8ece5;
     border-left: 2px solid #f8ece5;
     border-bottom: 2px solid #f8ece5;
-    .divider-title{
-      border-top: 2px solid #f8ece5;
+    .divider-container {
+      @include laptop {
+        width: 32%;
+        // background-color: red;
+      }
+      @include tablet {
+        width: 20%;
+      }
+      @include mobile {
+        width: 20%;
+      }
+      @include mobile-small {
+        width: 20%;
+      }
+
+      .divider-title {
+        border-top: 2px solid #f8ece5;
+      }
     }
+
     .morning-title {
       width: fit-content;
       font-family: $font-title;
@@ -33,8 +60,19 @@
       color: $primary-color;
       letter-spacing: normal;
     }
+
+    .morning-title-en {
+      width: fit-content;
+      font-family: $font-timeroman;
+      font-size: $font-size-subtitle;
+      text-align: center !important;
+      text-transform: uppercase;
+      color: $primary-color;
+      letter-spacing: normal;
+    }
     .time-title {
-      font-family: $font-title;
+      font-family: $font-timeroman;
+      text-transform: uppercase;
       font-size: $font-size-body;
       text-align: center !important;
       color: $primary-color;
@@ -45,6 +83,15 @@
       font-family: $font-title;
       font-size: $font-size-body;
       text-align: center !important;
+      color: $primary-color;
+      letter-spacing: normal;
+    }
+    .agenda-des-en {
+      margin-top: -5px;
+      font-family: $font-timeroman;
+      font-size: $font-size-body;
+      text-align: center !important;
+      text-transform: uppercase;
       color: $primary-color;
       letter-spacing: normal;
     }

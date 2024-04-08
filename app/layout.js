@@ -9,8 +9,9 @@ import "./home.scss";
 import "../components/footer.scss";
 import "./Introduction/intoduction.scss";
 import "./Agenda/agenda.scss";
-import "./Wish/wish.scss"
-import "./Map/map.scss"
+import "./Wish/wish.scss";
+import "./Map/map.scss";
+import "./Garllery/garllery.scss"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
           <div className="layout-container">
             <Box className="box-container">{children}</Box>
           </div>
-          <Footer/>
+          <Footer />
         </ChakraProvider>
       </body>
     </html>
