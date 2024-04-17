@@ -1,5 +1,9 @@
+"use client"
 import React from "react";
 import { Stack, Divider, Text, Image } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+
+const MotionText = motion(Text)
 
 export default function Map() {
   return (
@@ -8,7 +12,11 @@ export default function Map() {
         <Stack direction="row" justifyContent="center">
           <Divider className="divider-bottom" />
         </Stack>
-        <Text className="map-title">ផែនទី | Map</Text>
+        <MotionText className="map-title"
+          initial={{ y: 40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >ផែនទី | Map</MotionText>
         <Stack direction="row" justifyContent="center">
           <Divider className="divider-bottom" />
         </Stack>
