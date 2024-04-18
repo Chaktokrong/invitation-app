@@ -2,7 +2,6 @@
 
 .wish-page {
   width: 100%;
-  padding: 100px 0px;
 
   .wish-title {
     font-family: $font-title;
@@ -18,9 +17,10 @@
 
   .btn-save {
     padding: 4px 30px;
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    width: 120px;
     border-radius: 0px !important;
     background-color: $primary-color !important;
     font-family: $font-title;

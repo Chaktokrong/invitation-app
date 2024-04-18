@@ -95,11 +95,21 @@ export default function Agenda() {
       <Stack direction="row" justifyContent="center">
         <Stack direction="column" className="morning-agenda">
           <Stack direction="row" justifyContent="space-between">
-            <Stack direction="column" justifyContent="center" sx={{ width: "32%" }}>
+            <Stack
+              direction="column"
+              justifyContent="center"
+              className="divider-container"
+            >
               <Box className="divider-title" />
             </Stack>
-            <Text className="morning-title" sx={{ width: "280px" }}>កម្មវិធីពេលព្រឹក</Text>
-            <Stack direction="column" justifyContent="center" sx={{ width: "32%" }}>
+            <Text className="morning-title" sx={{ width: "280px" }}>
+              កម្មវិធីពេលព្រឹក
+            </Text>
+            <Stack
+              direction="column"
+              justifyContent="center"
+              className="divider-container"
+            >
               <Box className="divider-title" />
             </Stack>
           </Stack>
@@ -109,9 +119,7 @@ export default function Agenda() {
               <Stack direction="column" key={index}>
                 <Text className="time-title">{row?.time}</Text>
                 <Text className="agenda-des">{row?.title}</Text>
-                {
-                  agendaMorning?.length 
-                }
+                {agendaMorning?.length}
                 <Stack direction="row" justifyContent="center">
                   <FaArrowDownLong className="arrow-icon" />
                 </Stack>
@@ -124,11 +132,21 @@ export default function Agenda() {
       <Stack direction="row" justifyContent="center">
         <Stack direction="column" className="morning-agenda">
           <Stack direction="row" justifyContent="space-between">
-            <Stack direction="column" justifyContent="center" sx={{ width: "32%" }}>
+            <Stack
+              direction="column"
+              justifyContent="center"
+              className="divider-container"
+            >
               <Box className="divider-title" />
             </Stack>
-            <Text className="morning-title" sx={{ width: "280px" }}>កម្មវិធីពេលល្ងាច</Text>
-            <Stack direction="column" justifyContent="center" sx={{ width: "32%" }}>
+            <Text className="morning-title" sx={{ width: "280px" }}>
+              កម្មវិធីពេលល្ងាច
+            </Text>
+            <Stack
+              direction="column"
+              justifyContent="center"
+              className="divider-container"
+            >
               <Box className="divider-title" />
             </Stack>
           </Stack>
@@ -151,7 +169,7 @@ export default function Agenda() {
         <Stack direction="row" justifyContent="center">
           <Divider className="divider-bottom" />
         </Stack>
-        <Text className="agenda-title">Event Agenda</Text>
+        <Text className="agenda-title-en">Event Agenda</Text>
         <Stack direction="row" justifyContent="center">
           <Divider className="divider-bottom" />
         </Stack>
@@ -159,13 +177,22 @@ export default function Agenda() {
 
       <Stack direction="row" justifyContent="center">
         <Stack direction="column" className="morning-agenda">
-
           <Stack direction="row" justifyContent="space-between">
-            <Stack direction="column" justifyContent="center" sx={{ width: "32%" }}>
+            <Stack
+              direction="column"
+              justifyContent="center"
+              className="divider-container"
+            >
               <Box className="divider-title" />
             </Stack>
-            <Text className="morning-title" sx={{ width: "280px" }}>Morning Schedule</Text>
-            <Stack direction="column" justifyContent="center" sx={{ width: "32%" }}>
+            <Text className="morning-title-en" sx={{ width: "280px" }}>
+              Morning Schedule
+            </Text>
+            <Stack
+              direction="column"
+              justifyContent="center"
+              className="divider-container"
+            >
               <Box className="divider-title" />
             </Stack>
           </Stack>
@@ -174,7 +201,7 @@ export default function Agenda() {
             return (
               <Stack direction="column" key={index}>
                 <Text className="time-title">{row?.time}</Text>
-                <Text className="agenda-des">{row?.title}</Text>
+                <Text className="agenda-des-en">{row?.title}</Text>
                 <Stack direction="row" justifyContent="center">
                   <FaArrowDownLong className="arrow-icon" />
                 </Stack>
@@ -186,13 +213,22 @@ export default function Agenda() {
 
       <Stack direction="row" justifyContent="center">
         <Stack direction="column" className="morning-agenda">
-
           <Stack direction="row" justifyContent="space-between">
-            <Stack direction="column" justifyContent="center" sx={{ width: "32%" }}>
+            <Stack
+              direction="column"
+              justifyContent="center"
+              className="divider-container"
+            >
               <Box className="divider-title" />
             </Stack>
-            <Text className="morning-title" sx={{ width: "280px" }}>Evening Schedule</Text>
-            <Stack direction="column" justifyContent="center" sx={{ width: "32%" }}>
+            <Text className="morning-title-en" sx={{ width: "280px" }}>
+              Evening Schedule
+            </Text>
+            <Stack
+              direction="column"
+              justifyContent="center"
+              className="divider-container"
+            >
               <Box className="divider-title" />
             </Stack>
           </Stack>
@@ -201,13 +237,13 @@ export default function Agenda() {
             return (
               <Stack direction="column" key={index}>
                 <Text className="time-title">{row?.time}</Text>
-                <Text className="agenda-des">{row?.title}</Text>
-                {
-                  agendaEveningEn[agendaEveningEn.length - 1] === agendaEveningEn.length ? null : <Stack direction="row" justifyContent="center">
+                <Text className="agenda-des-en">{row?.title}</Text>
+                {agendaEveningEn[agendaEveningEn.length - 1] ===
+                agendaEveningEn.length ? null : (
+                  <Stack direction="row" justifyContent="center">
                     <FaArrowDownLong className="arrow-icon" />
                   </Stack>
-                }
-
+                )}
               </Stack>
             );
           })}

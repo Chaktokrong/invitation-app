@@ -2,7 +2,7 @@
 
 .map-page {
   width: 100%;
-  padding: 100px 0px;
+  // margin-top: 30px;
 
   .map-title {
     font-family: $font-title;
@@ -12,10 +12,20 @@
   }
   .divider-bottom {
     border-top: 2px solid $primary-color;
-    width: 50%;
+    width: 180px !important;
   }
   .map-img {
     width: 400px;
     height: auto;
+  }
+  .btn-save-map {
+    padding: 6px 20px;
+    text-transform: uppercase;
+    border: 2px solid $primary-color;
+    font-weight: 100;
+    border-radius: 6px !important;
+    font-family: $font-timeroman;
+    font-size: $font-size-body;
+    color: $primary-color;
   }
 }

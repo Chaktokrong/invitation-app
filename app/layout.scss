@@ -2,6 +2,8 @@
 
 .layout-container {
   width: 100%;
+  padding-top: 30px;
+  padding-bottom: 200px;
   display: flex;
   justify-content: center;
   // height: 800px;
@@ -24,19 +26,21 @@
 
   .box-container {
     // background-color: red;
-    width: 50%;
+    // width: 50%;
+    width: 100%;
 
     @include laptop {
-      width: 60%;
+      width: 80%;
+      // background-color: red;
     }
     @include tablet {
-      width: 100%;
+      width: 90%;
     }
     @include mobile {
-      width: 100%;
+      width: 98%;
     }
     @include mobile-small {
-      width: 100%;
+      width: 98%;
     }
   }
 }
