@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import { Stack, Divider, Text, Image } from "@chakra-ui/react";
+import { Stack, Divider, Text, Image, Button } from "@chakra-ui/react";
 
 export default function Map() {
   return (
