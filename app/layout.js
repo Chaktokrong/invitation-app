@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import { ChakraProvider, Box } from "@chakra-ui/react";
+import { ChakraProvider, Box, Image, Stack } from "@chakra-ui/react";
 //Srcs
 import Footer from "@/components/Footer";
 //Scss
@@ -26,7 +26,35 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <ChakraProvider>
           <div className="layout-container">
-            <Box className="box-container">{children}</Box>
+            <Box className="box-container">
+              <Box className="img-container">
+                <Stack direction="row" justifyContent="space-between" className="img-top">
+                  <Image
+                    src="../../Images/border-flower.png"
+                    alt="header-img"
+                    className="border-img-left"
+                  />
+                  <Image
+                    src="../../Images/border-flower.png"
+                    alt="header-img"
+                    className="border-img-right"
+                  />
+                </Stack>
+                {children}
+                <Stack direction="row" justifyContent="space-between" className="img-bottom">
+                  <Image
+                    src="../../Images/border-flower.png"
+                    alt="header-img"
+                    className="border-img-left"
+                  />
+                  <Image
+                    src="../../Images/border-flower.png"
+                    alt="header-img"
+                    className="border-img-right"
+                  />
+                </Stack>
+              </Box>
+            </Box>
           </div>
           <Footer />
         </ChakraProvider>
