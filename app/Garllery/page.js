@@ -8,6 +8,9 @@ export default function Garllery() {
         <Stack direction="row" justifyContent="center">
           <Divider className="divider-bottom" />
         </Stack>
+        <Stack>
+          
+        </Stack>
         <Text className="garllery-title">រូបភាព | GARLLERY</Text>
         <Stack direction="row" justifyContent="center">
           <Divider className="divider-bottom" />
