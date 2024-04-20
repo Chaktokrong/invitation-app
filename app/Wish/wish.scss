@@ -6,7 +6,12 @@
   .wish-title {
     font-family: $font-title;
     font-size: $font-size-title;
-    text-align: center;
+    color: $primary-color;
+  }
+
+  .wish-title-en {
+    font-family: $font-timeroman;
+    font-size: $font-size-title;
     color: $primary-color;
   }
 

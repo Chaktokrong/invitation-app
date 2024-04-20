@@ -9,7 +9,13 @@ export default function Map() {
         <Stack direction="row" justifyContent="center">
           <Divider className="divider-bottom" />
         </Stack>
-        <Text className="map-title">ផែនទី | Map</Text>
+        <Stack direction="row" justifyContent="center">
+          <Stack direction="row" spacing={1}>
+            <Text className="map-title">ផែនទី</Text>
+            <Text className="map-title">|</Text>
+            <Text className="map-title-en">MAP</Text>
+          </Stack>
+        </Stack>
         <Stack direction="row" justifyContent="center">
           <Divider className="divider-bottom" />
         </Stack>
