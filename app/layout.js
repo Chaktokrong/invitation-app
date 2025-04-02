@@ -1,17 +1,9 @@
 import { Inter } from "next/font/google";
-import { ChakraProvider, Box, Image, Stack } from "@chakra-ui/react";
-//Srcs
-import Footer from "@/components/Footer";
+import { ChakraProvider, Box } from "@chakra-ui/react";
 //Scss
 import "./globals.css";
 import "./layout.scss";
 import "./home.scss";
-import "../components/footer.scss";
-import "./Introduction/intoduction.scss";
-import "./Agenda/agenda.scss";
-import "./Wish/wish.scss";
-import "./Map/map.scss";
-import "./Garllery/garllery.scss"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,36 +19,9 @@ export default function RootLayout({ children }) {
         <ChakraProvider>
           <div className="layout-container">
             <Box className="box-container">
-              <Box className="img-container">
-                <Stack direction="row" justifyContent="space-between" className="img-top">
-                  <Image
-                    src="../../Images/border-flower.png"
-                    alt="header-img"
-                    className="border-img-left"
-                  />
-                  <Image
-                    src="../../Images/border-flower.png"
-                    alt="header-img"
-                    className="border-img-right"
-                  />
-                </Stack>
-                {children}
-                <Stack direction="row" justifyContent="space-between" className="img-bottom">
-                  <Image
-                    src="../../Images/border-flower.png"
-                    alt="header-img"
-                    className="border-img-left"
-                  />
-                  <Image
-                    src="../../Images/border-flower.png"
-                    alt="header-img"
-                    className="border-img-right"
-                  />
-                </Stack>
-              </Box>
+              <Box className="img-container">{children}</Box>
             </Box>
           </div>
-          <Footer />
         </ChakraProvider>
       </body>
     </html>
