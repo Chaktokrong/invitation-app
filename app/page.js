@@ -16,12 +16,6 @@ export default function Home() {
         </Stack>
         <Text className="invitation-des">សូមគោរពអញ្ជើញ</Text>
         <Text className="invitation-des">ឯកឧត្តម និងលោកជំទាវ</Text>
-
-        <Stack direction="row" justifyContent="center">
-          <Link href="/Introduction" passHref>
-            <Button className="button-to-open">សូមចុចដើម្បីបើកសំបុត្រ</Button>
-          </Link>
-        </Stack>
       </Stack>
     </div>
   );
