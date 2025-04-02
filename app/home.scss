@@ -2,34 +2,49 @@
 
 .home-page {
   width: 100%;
-  // margin-top: 40px;
 
-  .invitation-title {
-    font-family: $font-title;
-    font-size: $font-size-title;
-    color: $primary-color;
-    text-align: center;
-    letter-spacing: normal !important;
-  }
-  .invitation-img {
-    width: 200px;
-    height: auto;
-  }
-  .invitation-des {
-    font-family: $font-title;
-    font-size: $font-size-subtitle;
-    color: $primary-color;
-    text-align: center;
-    letter-spacing: normal !important;
-  }
-  .button-to-open {
-    font-family: $font-title;
-    font-size: $font-size-body;
-    color: $primary-color;
-    font-weight: 100 !important;
-    border: 1px solid $primary-color;
-    border-radius: 6px;
-    padding: 10px 30px;
-    letter-spacing: normal !important;
+  .top-card {
+    position: relative;
+
+    .invitation-img {
+      width: 500px;
+      height: auto;
+      // opacity: 50%;
+    }
+
+    .empty-card-container {
+      top: 0;
+      position: absolute;
+      width: 500px;
+      height: 100vh;
+      opacity: 60%;
+      background-color: #bcbbbb;
+    }
+
+    .top-text-container {
+      width: 400px;
+      height: auto;
+      top: 0;
+      position: absolute;
+      // opacity: 40%;
+      // background-color: rgb(158, 152, 152);
+
+      .invitation-title {
+        margin-top: 50px;
+        font-family: $font-title;
+        font-size: $font-size-20;
+        color: #fff;
+        text-align: center;
+        letter-spacing: normal !important;
+      }
+
+      .invitation-des {
+        font-family: $font-title;
+        font-size: $font-size-subtitle;
+        color: #fff;
+        text-align: center;
+        letter-spacing: normal !important;
+      }
+    }
   }
 }

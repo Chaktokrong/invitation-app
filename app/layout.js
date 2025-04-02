@@ -1,10 +1,10 @@
 import { Inter } from "next/font/google";
 import { ChakraProvider, Box } from "@chakra-ui/react";
+//Srcs
 //Scss
 import "./globals.css";
 import "./layout.scss";
 import "./home.scss";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
