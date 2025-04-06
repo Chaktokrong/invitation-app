@@ -5,9 +5,10 @@
 
   .top-card {
     position: relative;
+    background-color: gray;
 
     .invitation-img {
-      width: 500px;
+      width: 100%;
       height: auto;
       // opacity: 50%;
     }
@@ -24,13 +25,13 @@
     .top-text-container {
       width: 400px;
       height: auto;
-      top: 0;
+      top: 0; 
       position: absolute;
       // opacity: 40%;
       // background-color: rgb(158, 152, 152);
 
       .invitation-title {
-        margin-top: 50px;
+        // margin-top: 50px;
         font-family: $font-title;
         font-size: $font-size-20;
         color: #fff;
