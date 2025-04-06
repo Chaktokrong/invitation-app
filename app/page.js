@@ -26,7 +26,7 @@ export default function Home() {
             <Text className="invitation-title">ពិធីរៀបអាពាហ៍ពិពាហ៍</Text>
           </Stack>
         </Stack>
-        {/* <Text className="invitation-des">សូមគោរពអញ្ជើញ</Text>
+        {/* <Text className="invitation-des">សូមគោរពអញ្ជើញ</Text>nn
         <Text className="invitation-des">ឯកឧត្តម និងលោកជំទាវ</Text> */}
       </Stack>
     </div>
