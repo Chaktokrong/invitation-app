@@ -47,7 +47,6 @@ body {
   src: url("../public/Fonts/KhmerMuolRegular.ttf");
 }
 
-
 @font-face {
   font-family: Preahvihear;
   src: url("../public/Fonts/Preahvihear.ttf");
@@ -56,6 +55,11 @@ body {
 @font-face {
   font-family: Kantumruy;
   src: url("../public/Fonts/Kantumruy-Regular.ttf");
+}
+
+@font-face {
+  font-family: Bayon;
+  src: url("../public/Fonts/Bayon.ttf");
 }
 
 @font-face {
