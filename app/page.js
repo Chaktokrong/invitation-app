@@ -40,7 +40,7 @@ export default function Home() {
               <Text className="people-name">ហ៊ុល សូភីម</Text>
             </Stack>
 
-            <Stack direction="column" spacing={1} sx={{ paddingTop: "40px" }}>
+            <Stack direction="column" spacing={0} sx={{ paddingTop: "40px" }}>
               <Text className="invitation-title">សូមគោរពអញ្ជើញ</Text>
 
               <Stack
@@ -57,11 +57,11 @@ export default function Home() {
               </Stack>
             </Stack>
 
-            <Stack direction="column" spacing={1} sx={{ paddingTop: "10px" }}>
+            <Stack direction="column" spacing={1}>
               <Text className="people-name">
                 ថ្ងៃសៅរ៍ ទី០៣ ខែឧសភា ឆ្នាំ២០២៥
               </Text>
-              <Text className="people-name">វេលាម៉ោង ១១​ ថ្ងៃត្រង់</Text>
+              <Text className="people-name">វេលាម៉ោង ១១ : ០០​ ថ្ងៃត្រង់</Text>
               <Text className="invitation-des">
                 ភូមិជ្រោយនាងងួន ឃុំជ្រោយនាងងួន ស្រុកស្រីស្នំ ខេត្តសៀមរាប
               </Text>
@@ -103,13 +103,16 @@ export default function Home() {
               <Image
                 src="../../Images/map-code.png"
                 alt="Map"
-                w="80%"
+                w="280px"
                 h="auto"
                 objectFit="cover"
               />
             </Stack>
             <Stack direction="row" justifyContent="center">
-              <a href="https://maps.app.goo.gl/dKRP19oYWszNVqH67" className="map-text">
+              <a
+                href="https://maps.app.goo.gl/dKRP19oYWszNVqH67"
+                className="map-text"
+              >
                 ចុចមើលទីតាំង
               </a>
             </Stack>
@@ -122,10 +125,9 @@ export default function Home() {
             mt="20px"
           >
             <Image
-              // src="../../Images/couple-01.JPG"
               src="../../Images/img-test.avif"
               alt="header-img"
-              className="invitation-img"
+              className="footer-img"
             />
             <Stack
               direction="column"
@@ -133,7 +135,7 @@ export default function Home() {
               alignItems="center"
               className="card-footer-container"
             >
-              <Box className="card-inside"></Box>
+              <Box className="card-inside" />
             </Stack>
             <Stack
               direction="column"
@@ -141,15 +143,16 @@ export default function Home() {
               alignItems="center"
               className="footer-text-container"
             >
-              <Stack
-                direction="column"
-                spacing={10}
-                h="300px"
-                mt="40px"
-                p="10px"
-              >
-                <Text className="people-name">សូមអរគុណ</Text>
-                <Text className="people-name">
+              <Stack direction="column" spacing={8} h="300px" p="10px">
+                {/* <Text className="people-name">សូមអរគុណ</Text> */}
+                <Stack direction="row" justifyContent="center" mt="-30px">
+                  <Image
+                    src="../../Images/thank-you-thanks.gif"
+                    alt="Gif"
+                    style={{ width: "160px" }}
+                  />
+                </Stack>
+                <Text className="thanks-text">
                   វត្តមានឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា
                   ជាកិត្តិយសដ៏ឧត្តុង្គឧត្តម ចំពោះគ្រួសាររបស់យើងខ្ញុំ។
                 </Text>

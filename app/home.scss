@@ -21,11 +21,17 @@
       background-color: #696868;
     }
 
+    .footer-img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+    }
+
     .card-footer-container {
       top: 0;
       position: absolute;
       width: 100%;
-      height: 650px;
+      height: 600px;
       opacity: 60%;
 
       .card-inside {
@@ -39,12 +45,21 @@
     .footer-text-container {
       top: 0;
       width: 95%;
-      height: 650px;
+      height: 600px;
       position: absolute;
 
       .people-name {
         font-family: $font-bayon;
         font-size: 21px;
+        color: $gold-color;
+        text-align: center;
+        line-height: 38px;
+        letter-spacing: normal !important;
+      }
+
+      .thanks-text {
+        font-family: $font-bayon;
+        font-size: 20px;
         color: $gold-color;
         text-align: center;
         line-height: 38px;
@@ -127,7 +142,7 @@
   }
 
   .line-top {
-    width: 80%;
+    width:90%;
   }
 
   .invitation-address {
@@ -140,7 +155,8 @@
   .map-text {
     font-family: $font-kantumruy;
     font-weight: bold !important;
-    color: #0b58e9;
+    color: $gold-color;
+    // color: #0b58e9;
     font-size: 17px;
     text-align: center;
     letter-spacing: normal !important;
