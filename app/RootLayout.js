@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useRef, useEffect } from "react";
 import { Fireworks } from "fireworks-js";
 import { ChakraProvider, Box } from "@chakra-ui/react";

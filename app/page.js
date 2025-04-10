@@ -51,7 +51,7 @@ export default function Home() {
                 <Image
                   src="../../Images/border-style-gold.png"
                   alt="Border"
-                  w="88%"
+                  w="330px"
                 />
                 <Text className="guest-name">ឈ្លី ចតុរ៉ុង</Text>
               </Stack>
@@ -94,11 +94,25 @@ export default function Home() {
             />
           </Stack>
 
-          <Stack direction="column" spacing={1}>
+          <Stack direction="column" spacing={3}>
             <Text className="invite-title">ទីតាំងកម្មវិធីមង្គល</Text>
             <Text className="invitation-address">
               ភូមិជ្រោយនាងងួន ឃុំជ្រោយនាងងួន ស្រុកស្រីស្នំ ខេត្តសៀមរាប
             </Text>
+            <Stack direction="row" justifyContent="center" mt="-10px">
+              <Image
+                src="../../Images/map-code.png"
+                alt="Map"
+                w="80%"
+                h="auto"
+                objectFit="cover"
+              />
+            </Stack>
+            <Stack direction="row" justifyContent="center">
+              <a href="https://maps.app.goo.gl/dKRP19oYWszNVqH67" className="map-text">
+                ចុចមើលទីតាំង
+              </a>
+            </Stack>
           </Stack>
 
           <Stack

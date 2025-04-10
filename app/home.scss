@@ -18,7 +18,6 @@
       width: 100%;
       height: 650px;
       opacity: 60%;
-      // background-color: #bebdbd;
       background-color: #696868;
     }
 
@@ -48,6 +47,7 @@
         font-size: 21px;
         color: $gold-color;
         text-align: center;
+        line-height: 38px;
         letter-spacing: normal !important;
       }
     }
@@ -59,7 +59,7 @@
 
       .invitation-title-top {
         font-family: $font-muolpali;
-        font-size: 20px;
+        font-size: 22px;
         color: $gold-color;
         text-align: center;
         letter-spacing: normal !important;
@@ -79,7 +79,7 @@
         .guest-name {
           top: 0;
           position: absolute;
-          margin-top: 26px;
+          margin-top: 24px;
           color: $gold-color;
           font-family: $font-muolpali;
           font-size: 16px;
@@ -120,9 +120,10 @@
 
   .invitation-des {
     font-family: $font-kantumruy;
-    font-size: $font-size-subtitle;
+    font-size: 15px;
     text-align: center;
     letter-spacing: normal !important;
+    line-height: 30px;
   }
 
   .line-top {
@@ -134,5 +135,15 @@
     font-size: 15px;
     text-align: center;
     letter-spacing: 0.5px !important;
+  }
+
+  .map-text {
+    font-family: $font-kantumruy;
+    font-weight: bold !important;
+    color: #0b58e9;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: normal !important;
+    text-decoration: underline;
   }
 }
