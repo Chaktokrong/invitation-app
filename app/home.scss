@@ -9,7 +9,7 @@
 
     .invitation-img {
       width: 100%;
-      height: 600px;
+      height: 650px;
       object-fit: cover;
     }
 
@@ -17,7 +17,7 @@
       top: 0;
       position: absolute;
       width: 100%;
-      height: 600px;
+      height: 650px;
       opacity: 60%;
       background-color: #bcbbbb;
     }
@@ -25,36 +25,44 @@
     .top-text-container {
       width: 400px;
       height: auto;
-      top: 0; 
+      top: 0;
       position: absolute;
 
+      .invitation-title-top {
+        font-family: $font-muolpali;
+        font-size: 22px;
+        color: #fff;
+        text-align: center;
+        letter-spacing: normal !important;
+      }
+
       .invitation-title {
-        font-family: $font-title;
-        font-size: $font-size-20;
-        color: #fff;
-        text-align: center;
-        letter-spacing: normal !important;
-      }
-
-      .invite-title{
-        font-family: $font-title;
-        font-size: $font-size-20;
-        color: #fff;
-        text-align: center;
-        letter-spacing: normal !important;
-      }
-
-      .people-name{
-        font-family: $font-bayon;
+        font-family: $font-muolpali;
         font-size: $font-size-18;
         color: #fff;
         text-align: center;
         letter-spacing: normal !important;
       }
 
+      .invite-title {
+        font-family: $font-bayon;
+        font-size: $font-size-20;
+        color: #fff;
+        text-align: center;
+        letter-spacing: normal !important;
+      }
+
+      .people-name {
+        font-family: $font-bayon;
+        font-size: 22px;
+        color: #fff;
+        text-align: center;
+        letter-spacing: normal !important;
+      }
+
       .invitation-des {
-        font-family: $font-title;
-        font-size: $font-size-body;
+        font-family: $font-bayon;
+        font-size: $font-size-subtitle;
         color: #fff;
         text-align: center;
         letter-spacing: normal !important;
@@ -62,6 +70,12 @@
     }
   }
 
+  .invite-title {
+    font-family: $font-muolpali;
+    font-size: $font-size-18;
+    text-align: center;
+    letter-spacing: normal !important;
+  }
 
   .invitation-title {
     font-family: $font-bayon;
@@ -72,8 +86,7 @@
 
   .invitation-des {
     font-family: $font-kantumruy;
-    font-size: $font-size-body;
-    // color: #fff;
+    font-size: $font-size-subtitle;
     text-align: center;
     letter-spacing: normal !important;
   }

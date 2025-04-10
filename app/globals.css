@@ -67,6 +67,12 @@ body {
   src: url("../public/Fonts/Times-Roman.otf");
 }
 
+@font-face {
+  font-family: MuolPali;
+  src: url("../public/Fonts/Moulpali-Regular.ttf");
+}
+
+
 .bg-img{
   /* background-image: url("../public/Images/bride-and-groom.png"); */
   /* background-repeat: no-repeat;
