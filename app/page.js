@@ -40,15 +40,20 @@ export default function Home() {
               <Text className="people-name">ហ៊ុល សូភីម</Text>
             </Stack>
 
-            <Stack direction="column" spacing={1} sx={{ paddingTop: "60px" }}>
+            <Stack direction="column" spacing={1} sx={{ paddingTop: "40px" }}>
               <Text className="invitation-title">សូមគោរពអញ្ជើញ</Text>
 
-              <Stack direction="row" justifyContent="center">
+              <Stack
+                direction="row"
+                justifyContent="center"
+                className="guest-container"
+              >
                 <Image
-                  src="../../Images/border-style.png"
+                  src="../../Images/border-style-gold.png"
                   alt="Border"
                   w="88%"
                 />
+                <Text className="guest-name">ឈ្លី ចតុរ៉ុង</Text>
               </Stack>
             </Stack>
 
@@ -56,6 +61,7 @@ export default function Home() {
               <Text className="people-name">
                 ថ្ងៃសៅរ៍ ទី០៣ ខែឧសភា ឆ្នាំ២០២៥
               </Text>
+              <Text className="people-name">វេលាម៉ោង ១១​ ថ្ងៃត្រង់</Text>
               <Text className="invitation-des">
                 ភូមិជ្រោយនាងងួន ឃុំជ្រោយនាងងួន ស្រុកស្រីស្នំ ខេត្តសៀមរាប
               </Text>
@@ -63,7 +69,7 @@ export default function Home() {
           </Stack>
         </Stack>
 
-        <Stack direction="column" spacing={10}>
+        <Stack direction="column" spacing={8}>
           <Stack direction="row" justifyContent="center" mb="-50px" mt="-10px">
             <Image
               src="../../Images/line-style.png"
@@ -93,6 +99,48 @@ export default function Home() {
             <Text className="invitation-address">
               ភូមិជ្រោយនាងងួន ឃុំជ្រោយនាងងួន ស្រុកស្រីស្នំ ខេត្តសៀមរាប
             </Text>
+          </Stack>
+
+          <Stack
+            direction="column"
+            alignItems="center"
+            className="top-card"
+            mt="20px"
+          >
+            <Image
+              // src="../../Images/couple-01.JPG"
+              src="../../Images/img-test.avif"
+              alt="header-img"
+              className="invitation-img"
+            />
+            <Stack
+              direction="column"
+              justifyContent="center"
+              alignItems="center"
+              className="card-footer-container"
+            >
+              <Box className="card-inside"></Box>
+            </Stack>
+            <Stack
+              direction="column"
+              justifyContent="center"
+              alignItems="center"
+              className="footer-text-container"
+            >
+              <Stack
+                direction="column"
+                spacing={10}
+                h="300px"
+                mt="40px"
+                p="10px"
+              >
+                <Text className="people-name">សូមអរគុណ</Text>
+                <Text className="people-name">
+                  វត្តមានឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា
+                  ជាកិត្តិយសដ៏ឧត្តុង្គឧត្តម ចំពោះគ្រួសាររបស់យើងខ្ញុំ។
+                </Text>
+              </Stack>
+            </Stack>
           </Stack>
         </Stack>
       </Box>

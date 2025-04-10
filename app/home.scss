@@ -5,7 +5,6 @@
 
   .top-card {
     position: relative;
-    background-color: gray;
 
     .invitation-img {
       width: 100%;
@@ -19,11 +18,41 @@
       width: 100%;
       height: 650px;
       opacity: 60%;
-      background-color: #a5a2a2;
+      // background-color: #bebdbd;
+      background-color: #696868;
+    }
+
+    .card-footer-container {
+      top: 0;
+      position: absolute;
+      width: 100%;
+      height: 650px;
+      opacity: 60%;
+
+      .card-inside {
+        width: 95%;
+        border-radius: 10px;
+        height: 300px;
+        background-color: #696868;
+      }
+    }
+
+    .footer-text-container {
+      top: 0;
+      width: 95%;
+      height: 650px;
+      position: absolute;
+
+      .people-name {
+        font-family: $font-bayon;
+        font-size: 21px;
+        color: $gold-color;
+        text-align: center;
+        letter-spacing: normal !important;
+      }
     }
 
     .top-text-container {
-      width: 400px;
       height: auto;
       top: 0;
       position: absolute;
@@ -31,7 +60,7 @@
       .invitation-title-top {
         font-family: $font-muolpali;
         font-size: 20px;
-        color: #fff;
+        color: $gold-color;
         text-align: center;
         letter-spacing: normal !important;
       }
@@ -39,15 +68,28 @@
       .invitation-title {
         font-family: $font-muolpali;
         font-size: $font-size-18;
-        color: #fff;
+        color: $gold-color;
         text-align: center;
         letter-spacing: normal !important;
+      }
+
+      .guest-container {
+        position: relative;
+
+        .guest-name {
+          top: 0;
+          position: absolute;
+          margin-top: 26px;
+          color: $gold-color;
+          font-family: $font-muolpali;
+          font-size: 16px;
+        }
       }
 
       .people-name {
         font-family: $font-bayon;
         font-size: 21px;
-        color: #fff;
+        color: $gold-color;
         text-align: center;
         letter-spacing: normal !important;
       }
@@ -55,7 +97,7 @@
       .invitation-des {
         font-family: $font-bayon;
         font-size: 15px;
-        color: #fff;
+        color: $gold-color;
         text-align: center;
         letter-spacing: 0.5px !important;
       }
@@ -83,7 +125,7 @@
     letter-spacing: normal !important;
   }
 
-  .line-top{
+  .line-top {
     width: 80%;
   }
 
