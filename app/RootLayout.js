@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       setTimeout(() => {
         fireworks.stop();
         setShowFireworks(false);
-      }, 3000);
+      }, 4000);
     }
   }, []);
 
