@@ -8,13 +8,11 @@
   // background-image: linear-gradient(to left, #efdfd3, #f1e4d9, #f3e9df, #f5eee5, #f8f3ec, #f8f3ec, #f8f3ec, #f8f3ec, #f5eee5, #f3e9df, #f1e4d9, #efdfd3);
 
   .box-container {
-    // background-color: red;
-    // width: 50%;
+    // background-color: #EBEDEF;
     width: 30%;
 
     @include laptop {
       width: 70%;
-      // background-color: red;
     }
 
     @include tablet {

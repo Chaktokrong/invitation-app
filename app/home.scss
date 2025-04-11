@@ -142,7 +142,12 @@
   }
 
   .line-top {
-    width:90%;
+    width: 80%;
+  }
+
+  .line-bottom {
+    width: 80%;
+    transform: rotate(180deg);
   }
 
   .invitation-address {
@@ -155,8 +160,8 @@
   .map-text {
     font-family: $font-kantumruy;
     font-weight: bold !important;
-    color: $gold-color;
-    // color: #0b58e9;
+    color: #088ae0;
+    // color: $primary-color;
     font-size: 17px;
     text-align: center;
     letter-spacing: normal !important;

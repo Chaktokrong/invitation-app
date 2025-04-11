@@ -49,6 +49,7 @@ export default function Home() {
                 className="guest-container"
               >
                 <Image
+                  // src="../../Images/border-style.png"
                   src="../../Images/border-style-gold.png"
                   alt="Border"
                   w="330px"
@@ -86,11 +87,11 @@ export default function Home() {
             របស់យើងខ្ញុំទាំងពីរ។
           </Text>
 
-          <Stack direction="row" justifyContent="center" mb="-50px" mt="-50px">
+          <Stack direction="row" justifyContent="center" mb="-50px" mt="-60px">
             <Image
               src="../../Images/line-style.png"
               alt="Border"
-              className="line-top"
+              className="line-bottom"
             />
           </Stack>
 
