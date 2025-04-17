@@ -13,8 +13,8 @@ export default function Home() {
           className="top-card"
         >
           <Image
-            // src="../../Images/couple-01.JPG"
-            src="../../Images/img-test.avif"
+            src="../../Images/welcome-pic.jpg"
+            // src="../../Images/img-test.avif"
             alt="header-img"
             className="invitation-img"
           />
@@ -49,8 +49,8 @@ export default function Home() {
                 className="guest-container"
               >
                 <Image
-                  // src="../../Images/border-style.png"
-                  src="../../Images/border-style-gold.png"
+                  src="../../Images/border-style.png"
+                  // src="../../Images/border-style-gold.png"
                   alt="Border"
                   w="330px"
                 />
@@ -126,7 +126,7 @@ export default function Home() {
             mt="20px"
           >
             <Image
-              src="../../Images/img-test.avif"
+              src="../../Images/thanks-pic.jpg"
               alt="header-img"
               className="footer-img"
             />
