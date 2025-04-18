@@ -67,7 +67,7 @@ export default function HomePage() {
                   alt="Border"
                   w="340px"
                 />
-                <Text className="uest-name-small">{guestName}</Text>
+                <Text className="guest-name-small">{guestName}</Text>
               </Stack>
             </Stack>
 
