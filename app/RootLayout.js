@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef, useEffect, useContext } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Fireworks } from "fireworks-js";
 import { ChakraProvider, Box } from "@chakra-ui/react";
 import { Inter } from "next/font/google";
@@ -38,32 +38,6 @@ export default function RootLayout({ children }) {
       }, 4000);
     }
   }, []);
-
-  // ======================= Change language function =======================
-  // const [langauge, setLanguage] = useState("kh");
-
-  // useEffect(() => {
-  //   window.localStorage.setItem("language", langauge);
-  // }, []);
-
-  // const handleChangeLanguage = (lang) => {
-  //   setLanguage(lang);
-  //   changeLanguage(lang);
-  // };
-
-  // useEffect(() => {
-  //   let getLaung = window.localStorage.getItem("language");
-  //   if (getLaung) {
-  //     setLanguage(getLaung);
-  //     changeLanguage(getLaung);
-  //     return;
-  //   } else {
-  //     setLanguage("en");
-  //     changeLanguage("en");
-  //     window.localStorage.setItem("language", "en");
-  //     return;
-  //   }
-  // }, []);
 
   return (
     <html lang="en">
