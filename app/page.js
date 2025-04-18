@@ -1,8 +1,18 @@
 "use client";
 import { Stack, Text, Image, Box } from "@chakra-ui/react";
+import { useSearchParams } from "next/navigation";
 //Srcs
 
 export default function Home() {
+  const searchParams = useSearchParams();
+  const query = searchParams.get("guest") || "";
+
+  const splitName = query?.split("-");
+  const guestName =
+    splitName?.length > 1 ? splitName[0] + " " + splitName[1] : query;
+
+  // console.log("guestName::", guestName);
+
   return (
     <div className="home-page">
       <Box>
@@ -54,7 +64,7 @@ export default function Home() {
                   alt="Border"
                   w="330px"
                 />
-                <Text className="guest-name">ឈ្លី ចតុរ៉ុង</Text>
+                <Text className="guest-name">{guestName}</Text>
               </Stack>
             </Stack>
 
