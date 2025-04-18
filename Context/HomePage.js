@@ -65,9 +65,9 @@ export default function HomePage() {
                   src="../../Images/border-style.png"
                   // src="../../Images/border-style-gold.png"
                   alt="Border"
-                  w="330px"
+                  w="340px"
                 />
-                <Text className="guest-name">{guestName}</Text>
+                <Text className="uest-name-small">{guestName}</Text>
               </Stack>
             </Stack>
 
