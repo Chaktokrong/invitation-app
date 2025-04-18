@@ -1,7 +1,9 @@
 "use client";
 import { Stack, Text, Image, Box } from "@chakra-ui/react";
 import { useSearchParams } from "next/navigation";
-//Srcs
+//Image loading
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function Home() {
   const searchParams = useSearchParams();
@@ -22,11 +24,13 @@ export default function Home() {
           alignItems="center"
           className="top-card"
         >
-          <Image
+          <LazyLoadImage
             src="../../Images/welcome-pic.jpg"
-            // src="../../Images/img-test.avif"
             alt="header-img"
             className="invitation-img"
+            height={"100%"}
+            width={"100%"}
+            effect="blur"
           />
           <Stack
             direction="column"
@@ -135,10 +139,13 @@ export default function Home() {
             className="top-card"
             mt="20px"
           >
-            <Image
+            <LazyLoadImage
               src="../../Images/thanks-pic.jpg"
               alt="header-img"
               className="footer-img"
+              height={"100%"}
+              width={"100%"}
+              effect="blur"
             />
             <Stack
               direction="column"
