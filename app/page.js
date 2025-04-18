@@ -1,10 +1,13 @@
 "use client";
+import { Suspense } from "react";
 import HomePage from "@/Context/HomePage";
 
 export default function Home() {
   return (
     <div>
-      <HomePage />
+      <Suspense fallback={<p>Loading search params...</p>}>
+        <HomePage />
+      </Suspense>
     </div>
   );
 }
